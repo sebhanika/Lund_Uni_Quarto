@@ -1,0 +1,73 @@
+  /*-- scss:defaults --*/
+
+$body-bg: #ffffff;
+$body-color: rgb(8, 8, 8);
+$link-color: #42affa;
+
+// fonts
+$font-family-sans-serif: “Source Sans Pro”, Helvetica, sans-serif !default;
+$presentation-line-height: 1.5;
+$presentation-h2-font-size: 1.5em;
+
+$tabset-border-color: #b43030;
+$tabset-font-color: #4fe64f;
+
+
+/*-- scss:rules --*/
+
+
+/*creates Title slide*/
+
+
+
+#title-slide {
+  background-image: url("/graphics/title_pic.jpg");
+  text-align: right;
+
+  .author, .quarto-title-author-name {
+    color: $body-color;
+    font-size: 50%;
+
+  }
+
+  .quarto-title-authors {
+    display: flex;
+    justify-content: right;
+  
+    .quarto-title-author {
+      padding-left: 0em;
+      padding-right: 0em;
+      width: 100%;
+    }
+  }
+
+  .date, .quarto-title {
+    font-size: 70%;
+  }
+  
+  p.author::before, div.quarto-title-author::before {
+  content: "";
+  display: block;
+  border: none;
+  background-color: #4472C4;
+  color: #4472C4;
+  width: 60%;
+  margin-left: auto; 
+  margin-right: 0; 
+  height: 3px;
+  margin-bottom: 1em;
+  }
+}
+
+
+/*creates line below headline on slide*/
+.reveal .slide h2 { 
+  width:100%;
+  border-bottom: solid 1px rgb(0, 24, 56);
+}
+
+
+.reveal .slide blockquote {
+  border-left: 3px solid $text-muted;
+  padding-left: 0.5em;
+}

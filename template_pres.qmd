@@ -1,0 +1,63 @@
+---
+title: "The difference in spatial variables"
+author: "Sebastian Hanika - Department of Human Geography"
+date: 15/12/2022
+format:
+    revealjs:
+      theme: mytheme2.scss
+      logo: graphics/LundUniversity_C2line_RGB.png
+      self-contained: true
+      fig-cap-location: top
+footer: "Template - Sebastian Hanika"
+#title-slide-attributes:
+ #   data-background-image: "graphics/title_pic.jpg"
+    #data-background-size: contain
+    #data-background-opacity: "0.9"
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
+## Bullets
+
+When you click the **Render** button a document will be generated that includes:0
+
+-   Content authored with markdown
+-   Output from executable code
+-   hhhh
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+## Methodology
+
+::: panel-tabset
+### Description
+
+Dependent Variables:
+
+-   $\Delta$ share of workers past-retirment age
+-   Split up into regular and marginal employment
+
+Independent Variables:
+
+-   Regional classification & East-West Germany
+-   Control variables
+
+### Table
+
+| Variable                            | Type        |
+|-------------------------------------|-------------|
+| Regiostar7 Classification           | Categorical |
+| East-West Germany                   | Categorical |
+| Distance to large labor market (km) | Continuous  |
+| Commuter ratio of in 2009           | Continuous  |
+| Share of young workers in 2009      | Continuous  |
+| Employment growth 2009 to 2019      | Continuous  |
+:::
