@@ -4,7 +4,7 @@ author: "Sebastian Hanika - Department of Human Geography"
 date: 15/12/2022
 format:
     revealjs:
-      theme: mytheme2.scss
+      theme: lund_pres_theme.scss
       logo: graphics/LundUniversity_C2line_RGB.png
       self-contained: true
       fig-cap-location: top

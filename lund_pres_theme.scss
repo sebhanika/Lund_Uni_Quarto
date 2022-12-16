@@ -21,7 +21,7 @@ $tabset-font-color: #4fe64f;
 
 
 #title-slide {
-  background-image: url("/graphics/title_pic.jpg");
+  background-image: "/graphics/title_pic.jpg";
   text-align: right;
 
   .author, .quarto-title-author-name {
