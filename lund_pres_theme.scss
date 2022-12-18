@@ -1,4 +1,4 @@
-  /*-- scss:defaults --*/
+/*-- scss:defaults --*/
 
 $body-bg: #ffffff;
 $body-color: rgb(8, 8, 8);
@@ -15,13 +15,26 @@ $tabset-font-color: #4fe64f;
 
 /*-- scss:rules --*/
 
-
 /*creates Title slide*/
 
+.picture {
+  border-style: solid;
+  border-width: 3pt;
+  border-color: $body-color;
+  border-radius: 50%;
+  padding: 5pt;
+  height: 50%;
+  width: auto;
+}
 
+.title-slide {
+  background-image: url('/graphics/title_pic.png');
+  background-size: cover;
+}
 
+/*
 #title-slide {
-  background-image: "/graphics/title_pic.jpg";
+  background-color: #87b4df !important;
   text-align: right;
 
   .author, .quarto-title-author-name {
@@ -59,6 +72,7 @@ $tabset-font-color: #4fe64f;
   }
 }
 
+'/'
 
 /*creates line below headline on slide*/
 .reveal .slide h2 { 

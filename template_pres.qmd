@@ -11,8 +11,8 @@ format:
 footer: "Template - Sebastian Hanika"
 #title-slide-attributes:
  #   data-background-image: "graphics/title_pic.jpg"
-    #data-background-size: contain
-    #data-background-opacity: "0.9"
+  #  data-background-size: contain
+   # data-background-opacity: "0.9"
 ---
 
 ## Quarto
