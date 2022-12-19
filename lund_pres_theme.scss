@@ -27,15 +27,13 @@ $tabset-font-color: #4fe64f;
   width: auto;
 }
 
-.title-slide {
-  background-image: url('/graphics/title_pic.png');
-  background-size: cover;
-}
-
-/*
 #title-slide {
-  background-color: #87b4df !important;
   text-align: right;
+
+  .title {
+    font-size: 66%;
+    background-color: #b43030;
+  }
 
   .author, .quarto-title-author-name {
     color: $body-color;
@@ -70,9 +68,17 @@ $tabset-font-color: #4fe64f;
   height: 3px;
   margin-bottom: 1em;
   }
+
+  .remark-slide-content {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+
 }
 
-'/'
 
 /*creates line below headline on slide*/
 .reveal .slide h2 { 
