@@ -17,22 +17,11 @@ $tabset-font-color: #4fe64f;
 
 /*creates Title slide*/
 
-.picture {
-  border-style: solid;
-  border-width: 3pt;
-  border-color: $body-color;
-  border-radius: 50%;
-  padding: 5pt;
-  height: 50%;
-  width: auto;
-}
-
 #title-slide {
   text-align: right;
 
   .title {
     font-size: 66%;
-    background-color: #b43030;
   }
 
   .author, .quarto-title-author-name {
@@ -69,11 +58,10 @@ $tabset-font-color: #4fe64f;
   margin-bottom: 1em;
   }
 
-  .remark-slide-content {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+  .content {
+    background: rgb(139, 89, 89);
+    padding: 15px;
+    border-radius: 3px;
   }
 
 
@@ -85,7 +73,6 @@ $tabset-font-color: #4fe64f;
   width:100%;
   border-bottom: solid 1px rgb(0, 24, 56);
 }
-
 
 .reveal .slide blockquote {
   border-left: 3px solid $text-muted;
