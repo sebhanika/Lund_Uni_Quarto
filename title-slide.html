@@ -1,0 +1,29 @@
+
+<head>
+  <link rel="stylesheet" href="lund_pres_theme.scss">
+
+  <style>
+    body {background-color: powderblue;}
+    h1   {color: blue;}
+    p    {color: red;}
+    </style>
+
+
+</head>
+
+<section id="$idprefix$title-slide"$for(title-slide-attributes/pairs)$ $it.key$="$it.value$"$endfor$>
+  <section data-background-image="images/title_pic.jpg"></section>
+    <h1 class="title">$title$</h1>
+  $if(subtitle)$
+    <p class="subtitle">$subtitle$</p>
+  $endif$
+  $for(author)$
+    <p class="author">$author$</p>
+  $endfor$
+  $for(institute)$
+    <p class="institute">$institute$</p>
+  $endfor$
+  $if(date)$
+    <p class="date">$date$</p>
+  $endif$
+  </section>
