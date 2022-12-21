@@ -1,18 +1,20 @@
 ---
 title: "The difference in spatial variables"
 author: "Sebastian Hanika - Department of Human Geography"
-date: 15/12/2022
+date: today
 format:
     revealjs:
+      template-partials:
+      - title-slide.html
       theme: lund_pres_theme.scss
-      logo: graphics/LundUniversity_C2line_RGB.png
+      logo: images/LundUniversity_C2line_RGB.png
       self-contained: true
       fig-cap-location: top
 footer: "Template - Sebastian Hanika"
-#title-slide-attributes:
- #   data-background-image: "graphics/title_pic.jpg"
-  #  data-background-size: contain
-   # data-background-opacity: "0.9"
+# title-slide-attributes:
+#     data-background-image: "images/title_pic.jpg"
+#     data-background-size: contain
+#     data-background-opacity: "0.9"
 ---
 
 ## Quarto
