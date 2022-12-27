@@ -17,9 +17,17 @@ $tabset-font-color: #4fe64f;
 
 /*creates Title slide*/
 
-/*
+
 #title-slide {
+  background-color: white;
+  padding: 20px;
   text-align: right;
+  position: absolute;
+  width: auto;
+  height: auto;
+  right: 0px;
+  bottom: auto;
+
 
   .title {
     font-size: 66%;
@@ -68,7 +76,7 @@ $tabset-font-color: #4fe64f;
 
 }
 
-*/
+
 
 /*creates line below headline on slide*/
 .reveal .slide h2 { 

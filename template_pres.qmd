@@ -4,17 +4,15 @@ author: "Sebastian Hanika - Department of Human Geography"
 date: today
 format:
     revealjs:
-      template-partials:
-      - title-slide.html
       theme: lund_pres_theme.scss
       logo: images/LundUniversity_C2line_RGB.png
       self-contained: true
       fig-cap-location: top
 footer: "Template - Sebastian Hanika"
-# title-slide-attributes:
-#     data-background-image: "images/title_pic.jpg"
-#     data-background-size: contain
-#     data-background-opacity: "0.9"
+title-slide-attributes:
+     data-background-image: "images/title_slide_background.png"
+     data-background-size: contain
+     data-background-opacity: "0.9"
 ---
 
 ## Quarto
