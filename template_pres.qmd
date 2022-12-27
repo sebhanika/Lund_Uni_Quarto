@@ -8,11 +8,11 @@ format:
       logo: images/LundUniversity_C2line_RGB.png
       self-contained: true
       fig-cap-location: top
-footer: "Template - Sebastian Hanika"
+#footer: "Template - Sebastian Hanika"
 title-slide-attributes:
      data-background-image: "images/title_slide_background.png"
      data-background-size: contain
-     data-background-opacity: "0.9"
+     data-background-opacity: "1"
 ---
 
 ## Quarto

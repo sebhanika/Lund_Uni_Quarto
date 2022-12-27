@@ -17,7 +17,6 @@ $tabset-font-color: #4fe64f;
 
 /*creates Title slide*/
 
-
 #title-slide {
   background-color: white;
   padding: 20px;
@@ -27,7 +26,6 @@ $tabset-font-color: #4fe64f;
   height: auto;
   right: 0px;
   bottom: auto;
-
 
   .title {
     font-size: 66%;
@@ -54,6 +52,7 @@ $tabset-font-color: #4fe64f;
     font-size: 70%;
   }
   
+  
   p.author::before, div.quarto-title-author::before {
   content: "";
   display: block;
@@ -67,15 +66,20 @@ $tabset-font-color: #4fe64f;
   margin-bottom: 1em;
   }
 
-  .content {
-    background: rgb(139, 89, 89);
-    padding: 15px;
-    border-radius: 3px;
-  }
-
-
+    
 }
 
+
+.slide-logo {
+  display: block !important;
+  position: fixed !important;
+  top: 0 !important;
+  right: 10px !important;
+  max-height: 15% !important;
+  height: 100% !important;
+  width: auto !important;
+  color: $body-color !important;
+}
 
 
 /*creates line below headline on slide*/
