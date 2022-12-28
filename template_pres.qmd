@@ -1,5 +1,5 @@
 ---
-title: "The difference in spatial variables"
+title: "The difference in spatial variables in longer format"
 author: "Sebastian Hanika - Department of Human Geography"
 date: today
 format:
@@ -7,8 +7,10 @@ format:
       theme: lund_pres_theme.scss
       logo: images/LundUniversity_C2line_RGB.png
       self-contained: true
+      slide-number: c/t
+      show-slide-number: all
       fig-cap-location: top
-#footer: "Template - Sebastian Hanika"
+footer: "Template - Sebastian Hanika"
 title-slide-attributes:
      data-background-image: "images/title_slide_background.png"
      data-background-size: contain

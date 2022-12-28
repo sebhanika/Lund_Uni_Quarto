@@ -5,12 +5,13 @@ $body-color: rgb(8, 8, 8);
 $link-color: #42affa;
 
 // fonts
-$font-family-sans-serif: “Source Sans Pro”, Helvetica, sans-serif !default;
+$font-family-sans-serif: “Source Sans Pro”, Arial, sans-serif !default;
+$font-family-serif:  'Times New Roman', Times, serif;
+
 $presentation-line-height: 1.5;
 $presentation-h2-font-size: 1.5em;
 
 $tabset-border-color: #b43030;
-$tabset-font-color: #4fe64f;
 
 
 /*-- scss:rules --*/
@@ -19,22 +20,23 @@ $tabset-font-color: #4fe64f;
 
 #title-slide {
   background-color: white;
+  color: #894E11;
   padding: 20px;
-  text-align: right;
-  position: absolute;
+  text-align: left;
+  position: fixed !important;
+  top: 25% !important;
   width: auto;
-  height: auto;
-  right: 0px;
-  bottom: auto;
+  max-width: 50%;
+  right: -40px;
 
   .title {
-    font-size: 66%;
+    font-size: 75%;
+    color:#894E11;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   .author, .quarto-title-author-name {
-    color: $body-color;
-    font-size: 50%;
-
+    font-size: 40%;
   }
 
   .quarto-title-authors {
@@ -49,7 +51,7 @@ $tabset-font-color: #4fe64f;
   }
 
   .date, .quarto-title {
-    font-size: 70%;
+    font-size: 40%;
   }
   
   
@@ -57,23 +59,30 @@ $tabset-font-color: #4fe64f;
   content: "";
   display: block;
   border: none;
-  background-color: #4472C4;
-  color: #4472C4;
-  width: 60%;
+  background-color:#894E11;
+  color:#894E11;
+  width: 100%;
   margin-left: auto; 
   margin-right: 0; 
   height: 3px;
-  margin-bottom: 1em;
+  margin-bottom: 0em;
+  margin-top: 0em;
   }
 
-    
+}
+
+
+/*logo size and position */
+
+.reveal .slide-number {
+  font-family: $presentation-heading-font;
 }
 
 
 .slide-logo {
   display: block !important;
   position: fixed !important;
-  top: 0 !important;
+  bottom: 0 !important;
   right: 10px !important;
   max-height: 15% !important;
   height: 100% !important;
@@ -81,14 +90,33 @@ $tabset-font-color: #4fe64f;
   color: $body-color !important;
 }
 
+.slide-number, .reveal.has-logo .slide-number {
+  bottom: 10px !important;
+  right: 10px !important;
+  top: unset !important;
+  color: $body-color !important;
+}
 
-/*creates line below headline on slide*/
+
+
+
+
+/*Slide titles */
 .reveal .slide h2 { 
+  font-family: $font-family-serif;
+  color:#894E11;
+}
+
+
+/*creates line below headline on slide
+.reveal .slide h2 { 
+  font-family: $font-family-serif;
   width:100%;
-  border-bottom: solid 1px rgb(0, 24, 56);
+  border-bottom: solid 1px #894E11;
 }
 
 .reveal .slide blockquote {
   border-left: 3px solid $text-muted;
   padding-left: 0.5em;
 }
+*/
