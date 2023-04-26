@@ -19,15 +19,15 @@ $tabset-border-color: #b43030;
 /*creates Title slide*/
 
 #title-slide {
-  background-color: white;
+
+
+  background-image: url('images/title_slide_background.png');
+  background-size: cover; /* optional, adjust as needed */
+  background-position: center; /* optional, adjust as needed */
   color: #894E11;
-  padding: 20px;
   text-align: left;
-  position: fixed !important;
-  top: 25% !important;
-  width: auto;
-  max-width: 50%;
-  right: -10px;
+
+  
 
   .title {
     font-size: 75%;
@@ -39,6 +39,7 @@ $tabset-border-color: #b43030;
     font-size: 40%;
   }
 
+  
   .quarto-title-authors {
     display: flex;
     justify-content: right;
@@ -72,6 +73,7 @@ $tabset-border-color: #b43030;
 }
 
 
+
 /*logo size and position */
 
 .reveal .slide-number {
@@ -80,7 +82,7 @@ $tabset-border-color: #b43030;
 
 
 .slide-logo {
-  display: block !important;
+  display: block; 
   position: fixed !important;
   bottom: 0 !important;
   right: 10px !important;
@@ -90,15 +92,20 @@ $tabset-border-color: #b43030;
   color: $body-color !important;
 }
 
-.slide-number, .reveal.has-logo .slide-number {
+/*.slide-number, .reveal.has-logo .slide-number {
   bottom: 10px !important;
   right: 10px !important;
   top: unset !important;
   color: $body-color !important;
 }
+*/
 
-
-
+.slide-number, .reveal.has-logo .slide-number {
+  bottom: 1px !important;
+  left: 50px !important;
+  top: unset !important;
+  color: #777777 !important;
+}
 
 
 /*Slide titles */

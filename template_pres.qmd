@@ -11,10 +11,7 @@ format:
       show-slide-number: all
       fig-cap-location: top
 footer: "Template - Sebastian Hanika"
-title-slide-attributes:
-     data-background-image: "images/title_slide_background.png"
-     data-background-size: contain
-     data-background-opacity: "1"
+
 ---
 
 ## Quarto
