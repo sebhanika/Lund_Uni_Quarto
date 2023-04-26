@@ -2,11 +2,12 @@
 
 $body-bg: #ffffff;
 $body-color: rgb(8, 8, 8);
-$link-color: #42affa;
+$link-color: #000080;
 
 // fonts
 $font-family-sans-serif: “Source Sans Pro”, Arial, sans-serif !default;
 $font-family-serif:  'Times New Roman', Times, serif;
+$font-weight: 300;
 
 $presentation-line-height: 1.5;
 $presentation-h2-font-size: 1.5em;
@@ -15,30 +16,32 @@ $tabset-border-color: #b43030;
 
 
 /*-- scss:rules --*/
-
 /*creates Title slide*/
 
 #title-slide {
 
-
-  background-image: url('images/title_slide_background.png');
-  background-size: cover; /* optional, adjust as needed */
-  background-position: center; /* optional, adjust as needed */
+  background-color: white;
   color: #894E11;
+  padding: 20px;
   text-align: left;
-
-  
+  position: fixed !important;
+  top: 20% !important;
+  width: auto;
+  max-width: 65%;
+  right: -15%;
 
   .title {
-    font-size: 75%;
+    font-size: 42pt;
+    padding-top: 0.2em;
+    padding-left: 0.2em;
     color:#894E11;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:$font-family-serif !important;
+    font-weight: $font-weight;
   }
 
   .author, .quarto-title-author-name {
-    font-size: 40%;
+    font-size: 12pt;
   }
-
   
   .quarto-title-authors {
     display: flex;
@@ -51,10 +54,6 @@ $tabset-border-color: #b43030;
     }
   }
 
-  .date, .quarto-title {
-    font-size: 40%;
-  }
-  
   
   p.author::before, div.quarto-title-author::before {
   content: "";
@@ -65,21 +64,24 @@ $tabset-border-color: #b43030;
   width: 100%;
   margin-left: auto; 
   margin-right:0; 
-  height: 3px;
-  margin-bottom: 0em;
-  margin-top: 0em;
+  height: 2px;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
   }
 
 }
 
 
-
-/*logo size and position */
+/*slide number position */
 
 .reveal .slide-number {
   font-family: $presentation-heading-font;
+  bottom: 10px !important;
+  left: 10px  !important;
+  top: unset !important;
 }
 
+/*logo size and position */
 
 .slide-logo {
   display: block; 
@@ -92,19 +94,20 @@ $tabset-border-color: #b43030;
   color: $body-color !important;
 }
 
-/*.slide-number, .reveal.has-logo .slide-number {
-  bottom: 10px !important;
-  right: 10px !important;
-  top: unset !important;
-  color: $body-color !important;
-}
-*/
+/*slide menu button size and position */
 
-.slide-number, .reveal.has-logo .slide-number {
-  bottom: 1px !important;
-  left: 50px !important;
-  top: unset !important;
-  color: #777777 !important;
+.slide-menu-button {
+  position: fixed;
+  top: 10px !important;
+  right: 10px !important;
+  bottom: unset !important;
+  left: unset !important
+
+}
+
+.a {
+  font-size: 50pt; /* Change the font size to your desired value */
+  color: #FF0000 !important; /* Change the color to your desired value */
 }
 
 
@@ -113,17 +116,3 @@ $tabset-border-color: #b43030;
   font-family: $font-family-serif;
   color:#894E11;
 }
-
-
-/*creates line below headline on slide
-.reveal .slide h2 { 
-  font-family: $font-family-serif;
-  width:100%;
-  border-bottom: solid 1px #894E11;
-}
-
-.reveal .slide blockquote {
-  border-left: 3px solid $text-muted;
-  padding-left: 0.5em;
-}
-*/
