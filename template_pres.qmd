@@ -34,7 +34,9 @@ When you click the **Render** button a presentation will be generated that inclu
 - sucks
 
 ```{r}
-1 + 1
+x <- 5+5
+y <- 3
+print(x*y)
 ```
 
 ## Methodology
