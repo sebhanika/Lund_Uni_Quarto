@@ -10,9 +10,15 @@ $font-family-serif:  'Times New Roman', Times, serif;
 $font-weight: 300;
 
 $presentation-line-height: 1.5;
-$presentation-h2-font-size: 1.5em;
+$presentation-h2-font-size: 48pt;
 
-$tabset-border-color: #b43030;
+$tabset-border-color: #894E11;
+
+$code-bg: $body-color !default;
+$code-color: $body-bg !default;
+$code-block-bg: $body-color !default;
+$code-block-border-color: $body-color !default;
+
 
 
 /*-- scss:rules --*/
@@ -102,9 +108,8 @@ $tabset-border-color: #b43030;
   right: 10px !important;
   bottom: unset !important;
   left: unset !important;
-  color: red;
+  }
 
-}
 
 /*Slide titles */
 .reveal .slide h2 { 
