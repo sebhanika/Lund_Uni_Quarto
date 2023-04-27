@@ -7,5 +7,6 @@ I will update this as I move forward and hope to also have a Quarto Document tem
 ### Current issues
 - Change color and size of slide-menu-button. I can change the color of all links in the presentation but somehow not of only of the slide menu button. I can also not change its size even though I successfully moved it to the top right corner.
 - Clean up code and reduce redundant code
+- External YAML
 - Extend quarto presentation to template
 - Make package easily downloadable for others to use 
