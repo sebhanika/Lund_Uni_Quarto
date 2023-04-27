@@ -31,13 +31,22 @@ When you click the **Render** button a document will be generated that includes:
 When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
 
 - this 
+  - is a fail
 - sucks
 
-```{r}
-x <- 5+5
-y <- 3
-print(x*y)
+## Code try
+
+```{r, echo = TRUE}
+library(ggplot2)
+data("mtcars")
+ggplot(mtcars, aes(x=as.factor(cyl), y=mpg)) + 
+  geom_boxplot(fill="slateblue", alpha=0.2) + 
+  xlab("cyl")
+
 ```
+
+
+
 
 ## Methodology
 
@@ -48,6 +57,9 @@ Dependent Variables:
 
 -   share of workers past-retirment age
 -   Split up into regular and marginal employment
+    - meh
+    - muh
+    - mäh
 
 Independent Variables:
 
