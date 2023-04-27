@@ -1,0 +1,154 @@
+/*-- scss:defaults --*/
+
+$body-bg: #ffffff;
+$body-color: rgb(8, 8, 8);
+$link-color: #000080;
+
+/* Font settings*/
+$font-family-sans-serif: “Source Sans Pro”, Arial, sans-serif !default;
+$font-family-serif:  'Times New Roman', Times, serif;
+$font-weight: 300;
+$presentation-line-height: 1.5;
+$presentation-h2-font-size: 48pt;
+
+/* change the border color of tabsets*/
+$tabset-border-color: #894E11;
+
+/*-- scss:rules --*/
+
+/*creates Title slide*/
+#title-slide {
+
+  /*general settings */
+  background-color: white;
+  color: #894E11;
+  padding: 20px;
+  text-align: left;
+  position: fixed !important;
+  top: 20% !important;
+  width: auto;
+  max-width: 65%;
+  right: -15%; /*this is needed to properly align to the right. might be changed later  
+                since it is not a clean solution*/
+
+  /*setting of title and author*/
+  .title {
+    font-size: 42pt;
+    padding-top: 0.2em;
+    padding-left: 0.2em;
+    color:#894E11;
+    font-family:$font-family-serif !important;
+    font-weight: $font-weight;
+  }
+
+  .author, .quarto-title-author-name {
+    font-size: 12pt;
+  }
+  
+  .quarto-title-authors {
+    display: flex;
+    justify-content: right;
+  
+    .quarto-title-author {
+      padding-left: 0em;
+      padding-right: 0em;
+      width: 100%;
+    }
+  }
+  
+  /* add horizontal line between title and author */
+  p.author::before, div.quarto-title-author::before {
+  content: "";
+  display: block;
+  border: none;
+  background-color:#894E11;
+  color:#894E11;
+  width: 100%;
+  margin-left: auto; 
+  margin-right:0; 
+  height: 2px;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  }
+
+}
+
+/* Change font size of slide content */
+.reveal section {
+  font-size: 22pt; /* Replace with desired font size */
+}
+
+/*slide number position */
+.reveal .slide-number {
+  font-family: $presentation-heading-font;
+  bottom: 10px !important;
+  left: 10px  !important;
+  top: unset !important;
+}
+
+.reveal .slide-number a {
+  font-size: 0.8em !important;
+}
+
+/*logo size and position */
+.slide-logo {
+  display: block; 
+  position: fixed !important;
+  bottom: 10px !important;
+  right: 15px !important;
+  max-height: 15% !important;
+  height: 100% !important;
+  width: auto !important;
+  color: $body-color !important;
+}
+
+/*slide menu button size and position */
+.slide-menu-button {
+  position: fixed;
+  top: 10px !important;
+  right: 10px !important;
+  bottom: unset !important;
+  left: unset !important;
+  }
+
+/*Slide titles */
+.reveal .slide h2 { 
+  font-family: $font-family-serif;
+  font-weight: $font-weight;
+  color:#894E11;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+/*change bullet points to match the Lund Format  */
+
+/*change bullet point color  */
+:not(.panel-tabset) ::marker {
+  color:#894E11;
+}
+
+/*change bullet points  */
+ul {
+  list-style: none;
+}
+
+ul li {
+  list-style: disc; /* set all bullet points to disc shape */
+}
+
+ul ul li {
+  list-style-type: none; /* remove old-style */
+  line-height: 0.8;
+}
+
+ul ul li:before {
+  content: "\2013";
+  display: inline-block;
+  width: 1em;
+  margin-left: -0.75em;  /* add the dash before the list item and remove its left margin */
+  color: #894E11;  /* set the color of the dash to red */
+}
+
+ul li {
+  color:$body-color;
+}
