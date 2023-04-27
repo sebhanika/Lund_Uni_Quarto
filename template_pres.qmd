@@ -20,33 +20,45 @@ Quarto enables you to weave together content and executable code into a finished
 
 ## Bullets
 
-When you click the **Render** button a document will be generated that includes:0
+When you click the **Render** button a document will be generated that includes:
 
 -   Content authored with markdown
 -   Output from executable code
 -   hhhh
 
 ## Code
-
 When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
 
 - this 
   - is a fail
 - sucks
 
-## Code try
+```{r}
+#| echo: true
 
-```{r, echo = TRUE}
-library(ggplot2)
-data("mtcars")
-ggplot(mtcars, aes(x=as.factor(cyl), y=mpg)) + 
-  geom_boxplot(fill="slateblue", alpha=0.2) + 
-  xlab("cyl")
-
+x <- 5*3
+print("X is equal to: ", x)
 ```
 
 
+## Tabsets { .scrollable transition="slide"}
 
+::: panel-tabset
+### Plot
+
+```{r}
+library(ggplot2)
+ggplot(mtcars, aes(hp, mpg, color = am)) +
+  geom_point() +
+  geom_smooth(formula = y ~ x, method = "loess")
+```
+
+### Data
+
+```{r}
+knitr::kable(mtcars)
+```
+:::
 
 ## Methodology
 
@@ -77,3 +89,18 @@ Independent Variables:
 | Share of young workers in 2009      | Continuous  |
 | Employment growth 2009 to 2019      | Continuous  |
 :::
+
+
+## Interactive Slides {transition="slide"}
+
+Include Jupyter widgets and htmlwidgets in your presentations
+
+```{r, width = 20, height = 20}
+#| echo: false
+#| fig-height: 5
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng=174.768, lat=-36.852, popup="The birthplace of R")
+```
+
