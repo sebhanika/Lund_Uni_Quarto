@@ -101,18 +101,14 @@ $tabset-border-color: #b43030;
   top: 10px !important;
   right: 10px !important;
   bottom: unset !important;
-  left: unset !important
+  left: unset !important;
+  color: red;
 
 }
-
-.a {
-  font-size: 50pt; /* Change the font size to your desired value */
-  color: #FF0000 !important; /* Change the color to your desired value */
-}
-
 
 /*Slide titles */
 .reveal .slide h2 { 
   font-family: $font-family-serif;
   color:#894E11;
 }
+
