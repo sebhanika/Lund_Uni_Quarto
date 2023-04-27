@@ -3,14 +3,14 @@ title: "The difference in spatial variables in longer format"
 author: "Sebastian Hanika - Department of Human Geography"
 format:
     revealjs:
-      theme: lund_pres_theme.scss
-      logo: images/LundUniversity_C2line_RGB.png
+      theme: extensions/lund_pres_theme.scss
+      logo: extensions/LundUniversity_C2line_RGB.png
       self-contained: true
       slide-number: c/t
       fig-cap-location: top
-      include-after-body: clean_title_page.html
+      include-after-body: extensions/clean_title_page.html
 title-slide-attributes:
-  data-background-image: "images/title_slide_background.png"
+  data-background-image: "extensions/title_slide_background.png"
   data-background-size: contain
 ---
 
