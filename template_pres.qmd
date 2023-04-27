@@ -30,6 +30,9 @@ When you click the **Render** button a document will be generated that includes:
 
 When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
 
+- this 
+- sucks
+
 ```{r}
 1 + 1
 ```
@@ -41,7 +44,7 @@ When you click the **Render** button a presentation will be generated that inclu
 
 Dependent Variables:
 
--   $\Delta$ share of workers past-retirment age
+-   share of workers past-retirment age
 -   Split up into regular and marginal employment
 
 Independent Variables:
