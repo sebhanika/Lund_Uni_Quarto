@@ -1,5 +1,5 @@
 ---
-title: "The difference in spatial variables in longer format"
+title: "My first ever Quarto Presentation for Lund University"
 author: "Sebastian Hanika - Department of Human Geography"
 format:
     revealjs:
@@ -14,24 +14,23 @@ title-slide-attributes:
   data-background-size: contain
 ---
 
-## Quarto
+## First Slide
 
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+This is my first ever presentation using my quarto template for Lund University. I will include some basic features of quarto presentation in the following slides based on the example presentation on quarto.org
 
 ## Bullets
 
-When you click the **Render** button a document will be generated that includes:
+These are bullet points with Lund Colors:
 
--   Content authored with markdown
--   Output from executable code
--   hhhh
+- First bullet point 
+- Second bullet point
+  - Indented bullet point
+  - Another indented bullet points
+- Normal bullet point again
 
 ## Code
 When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
 
-- this 
-  - is a fail
-- sucks
 
 ```{r}
 #| echo: true
@@ -60,34 +59,29 @@ knitr::kable(mtcars)
 ```
 :::
 
-## Methodology
+## More tabsets
 
 ::: panel-tabset
 ### Description
 
-Dependent Variables:
+Tabsets have also been altered to match the Lund style:
 
--   share of workers past-retirment age
--   Split up into regular and marginal employment
-    - meh
-    - muh
-    - mäh
+- More bullet points in the first tab
+- More here
+  - One
+  - two
+  - Three
 
-Independent Variables:
-
--   Regional classification & East-West Germany
--   Control variables
 
 ### Table
 
-| Variable                            | Type        |
-|-------------------------------------|-------------|
-| Regiostar7 Classification           | Categorical |
-| East-West Germany                   | Categorical |
-| Distance to large labor market (km) | Continuous  |
-| Commuter ratio of in 2009           | Continuous  |
-| Share of young workers in 2009      | Continuous  |
-| Employment growth 2009 to 2019      | Continuous  |
+| Variable     | Type        |
+|--------------|-------------|
+| Variable 1   | Categorical |
+| Variable 2   | Categorical |
+| Variable 3   | Continuous  |
+| Variable 4   | Continuous  |
+| Variable 5   | Continuous  |
 :::
 
 
