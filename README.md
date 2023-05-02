@@ -6,6 +6,8 @@ This repository contains templates for creating Quarto documents and presentatio
 To use the presentation template, simply download the 'extensions' folder and place it in the project folder of your Quarto presentation. The SCSS file (lund_pres_theme.scss) contains all the styling options for the presentation, such as font size and colors. You can modify these options to your liking. The png files contain the logo and background image for the title slide, and the 'clean_title_page.html' file removes unnecessary elements from the title slide. You can specify the title and author of your presentation in the YAML as you would in a regular Quarto presentation.
 
 ### Current Issues
+- Continue to check compatability with all Quarto features
+- Adjust table layout
 - Difficulty changing the color and size of the slide menu button.
 - Redundant code that needs to be cleaned up.
 - Adding an external YAML feature.
@@ -13,3 +15,5 @@ To use the presentation template, simply download the 'extensions' folder and pl
 - Creating a Quarto document template.
 
 Overall, this repository provides a start point for creating presentations and documents that adhere to Lund University's official PowerPoint template. With a few tweaks and improvements, it will become even more versatile.
+
+Thanks go out to  Mickaël Canouil https://github.com/mcanouil and his Quarto template on which much of the SCSS theme is based.
