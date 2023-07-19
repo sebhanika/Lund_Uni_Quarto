@@ -1,0 +1,30 @@
+---
+title: "Report Title"
+subtitle: "Report subtitle"
+author: "Name and Sruname"
+date: last-modified
+date-format: "DD-MM-YYYY"
+description: "Text Text Text Text Text Text Text Text "
+format: 
+  html:
+    embed-resources: true
+    smooth-scroll: true
+    theme: extensions/lund_pres_theme.scss
+    fontcolor: black
+    logo: extensions/LundUniversity_C2line_RGB.png
+   # toc: true
+   # toc-location: left
+    #toc-title: Summary
+    #toc-depth: 3
+---
+
+## This is my first doc
+
+This is some text
+
+### Headline 1
+
+How much does it look like lund
+
+-  is this correct
+-  and this?

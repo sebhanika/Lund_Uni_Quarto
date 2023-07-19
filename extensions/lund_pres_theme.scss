@@ -18,12 +18,9 @@ $tabset-border-color: #894E11;
 
 $code-block-border-color: #00000000;
 
-
-
-
 /*-- scss:rules --*/
 
-/*creates Title slide*/
+/*creates Title slide for Quarto Presentation*/
 #title-slide {
 
   /*general settings */
@@ -87,7 +84,6 @@ $code-block-border-color: #00000000;
 
 /*slide number position */
 .reveal .slide-number {
-  font-family: $presentation-heading-font;
   bottom: 10px !important;
   left: 10px  !important;
   top: unset !important;
@@ -159,3 +155,4 @@ ul ul li:before {
 ul li {
   color:$body-color;
 }
+
