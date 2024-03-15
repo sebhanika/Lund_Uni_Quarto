@@ -15,7 +15,6 @@ $presentation-h2-font-size: 48pt;
 $tabset-border-color: #894E11;
 
 /* code block settings */
-
 $code-block-border-color: #00000000;
 
 /*-- scss:rules --*/
@@ -124,7 +123,6 @@ $code-block-border-color: #00000000;
 }
 
 /*change bullet points to match the Lund Format  */
-
 /*change bullet point color  */
 :not(.panel-tabset) ::marker {
   color:#894E11;
@@ -155,7 +153,6 @@ ul ul li:before {
 ul li {
   color:$body-color;
 }
-
 
 /* Color of Tab set */
 a:link { 
